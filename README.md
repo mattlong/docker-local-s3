@@ -1,3 +1,19 @@
+# Local S3 built on Docker and OpenStack Swift
+
+First off, this is mostly a fork of [ccollicutt/docker-swift-onlyone](https://github.com/ccollicutt/docker-swift-onlyone) that I cleaned up a bit and added the swift3 Swift plugin to. Thanks so much to ccollicutt for their work! The README from that repo at the time I forked it is left in tact at the bottom of this README.
+
+## Usage
+
+
+## References:
+
+* [http://www.buildcloudstorage.com/2011/10/installing-openstack-swift-cluster-on.html](http://www.buildcloudstorage.com/2011/10/installing-openstack-swift-cluster-on.html)
+* [http://www.buildcloudstorage.com/2011/11/s3-apis-on-openstack-swift.html](http://www.buildcloudstorage.com/2011/11/s3-apis-on-openstack-swift.html)
+* [http://serverascode.com/2014/06/12/run-swift-in-docker.html](http://serverascode.com/2014/06/12/run-swift-in-docker.html)
+* [https://github.com/stackforge/swift3](https://github.com/stackforge/swift3)
+
+---
+
 #Docker OpenStack Swift onlyone
 
 This is a docker file that creates an OpenStack swift image which has only one replica and only one device. Why would this be useful? I think that Docker and OpenStack Swift go together like peas and carrots. Distributed files systems are a pain, so why not just use OpenStack Swift? Scaling is not as much of an issue with object storage. Many Docker containers, even on separate hosts, can use one OpenStack Swift container to persist files.
