@@ -1,0 +1,10 @@
+swift3:
+  build: .
+  volumes_from:
+    - data
+  ports:
+    - "8080:8080"
+data:
+  image: busybox
+  volumes:
+    - /srv
